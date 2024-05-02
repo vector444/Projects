@@ -5,9 +5,7 @@ from keras.models import load_model
 
 face_classifier=cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
 
-path='project/emotion detection/Final_Resnet50_Best_model.keras'
-isFile = os.path.isfile(path) 
-classifier=load_model(isFile)
+classifier=load_model(Final_Resnet50_Best_model.keras)
 
 emotion_labels=['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
 
